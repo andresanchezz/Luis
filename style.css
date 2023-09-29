@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+}
+
+.container-all {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.container-all .add-users-container {
+  width: 25%;
+}
+.container-all .add-users-container form input, .container-all .add-users-container form select {
+  text-transform: capitalize;
+  width: 100%;
+  margin: 8px 0;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 0.1rem 0.5rem;
+}
+.container-all .add-users-container form input[type=submit], .container-all .add-users-container form select[type=submit] {
+  transition: all 0.3s;
+  padding: 4px 0;
+  color: white;
+}
+.container-all .add-users-container form input[type=submit]:hover, .container-all .add-users-container form select[type=submit]:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 756px) {
+  .container-all .add-users-container {
+    width: 50%;
+  }
+}/*# sourceMappingURL=style.css.map */

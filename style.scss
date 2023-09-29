@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+}
+
+
+.container-all{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    .add-users-container{
+        width: 25%;
+        form{
+            input, select{
+                text-transform: capitalize;
+                width: 100%;
+                margin: 8px 0;
+                outline: none;
+                border: 1px solid gray;
+                border-radius: 4px;
+                padding: 0.1rem 0.5rem ;
+                &[type="submit"]{
+                    transition: all 0.3s;
+                    padding: 4px 0;
+                    color: white;
+                    &:hover{
+                        transform: scale(1.05);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 756px){
+    .container-all{
+        .add-users-container{
+            width: 50%;
+        }
+    }
+}
